@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { UiComponent } from '@angular-playground/ui';
+import { ButtonComponent } from '@angular-playground/ui';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, UiComponent, RouterModule],
+  imports: [ButtonComponent, RouterModule],
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  template: `
+    <lib-button />
+    <router-outlet></router-outlet>
+  `,
+  styles: ``,
 })
 export class AppComponent {
   title = 'core';
