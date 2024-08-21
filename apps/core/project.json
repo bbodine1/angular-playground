@@ -22,7 +22,10 @@
             "input": "apps/core/public"
           }
         ],
-        "styles": ["apps/core/src/styles.scss"],
+        "styles": [
+          "node_modules/normalize.css/normalize.css",
+          "apps/core/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
