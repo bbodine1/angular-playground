@@ -5,11 +5,8 @@ import { ButtonComponent } from '@angular-playground/ui';
 @Component({
   standalone: true,
   imports: [ButtonComponent, RouterModule],
-  selector: 'app-root',
-  template: `
-    <lib-button />
-    <router-outlet></router-outlet>
-  `,
+  selector: 'core-root',
+  template: `<router-outlet></router-outlet>`,
   styles: ``,
 })
 export class AppComponent {
