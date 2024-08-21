@@ -1,25 +1,31 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
+import {
+  HeaderAdminComponent,
+  NavAdminComponent,
+  FooterAdminComponent,
+} from '@ap/core-ui';
 
 @Component({
   selector: 'core-admin-layout',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    NavAdminComponent,
+    HeaderAdminComponent,
+    FooterAdminComponent,
+  ],
   template: `
-    <header>
-      <h1>Admin Layout Header</h1>
-    </header>
+    <lib-header-admin />
 
-    <nav>
-      <a routerLink="/">Home</a>
-      <a routerLink="/about">About</a>
-    </nav>
+    <lib-nav-admin />
 
     <main>
       <router-outlet />
     </main>
 
-    <footer>Admin Footer</footer>
+    <lib-footer-admin />
   `,
   styles: ``,
 })

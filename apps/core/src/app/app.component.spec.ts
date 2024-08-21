@@ -19,6 +19,6 @@ describe('AppComponent', () => {
   it(`should have as title 'core'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('core');
+    expect(app.title).toEqual('Enroll Frontend Demo');
   });
 });

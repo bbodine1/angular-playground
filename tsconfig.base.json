@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-playground/ui": ["ui/src/index.ts"]
+      "@ap/core-ui": ["core-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
