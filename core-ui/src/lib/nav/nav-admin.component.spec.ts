@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NavAdminComponent } from './nav-admin.component';
+import { ActivatedRoute } from '@angular/router';
 
 describe('NavAdminComponent', () => {
   let component: NavAdminComponent;
@@ -8,6 +9,14 @@ describe('NavAdminComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [NavAdminComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            // Add any necessary properties or methods here
+          },
+        },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(NavAdminComponent);
