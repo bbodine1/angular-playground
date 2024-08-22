@@ -14,14 +14,24 @@ import {
   template: `
     <lib-header />
 
-    <lib-nav-main />
-
     <main>
-      <router-outlet />
+      <div class="container">
+        <lib-nav-main />
+        <router-outlet />
+      </div>
     </main>
 
     <lib-footer />
   `,
-  styles: ``,
+  styles: `
+    main {
+      min-height: calc(100vh - 72px - 116px);
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+  `,
 })
 export class MainLayoutComponent {}
