@@ -6,16 +6,6 @@
   "projectType": "library",
   "tags": [],
   "targets": {
-    "build": {
-      "options": {
-        "assets": [
-          {
-            "glob": "**/*",
-            "input": "core-ui/assets"
-          }
-        ]
-      }
-    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

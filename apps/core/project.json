@@ -20,6 +20,10 @@
           {
             "glob": "**/*",
             "input": "apps/core/public"
+          },
+          {
+            "glob": "**/*",
+            "input": "core-ui/assets"
           }
         ],
         "styles": [
