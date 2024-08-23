@@ -96,7 +96,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         align-items: center;
         gap: 12px;
         height: 100%;
-        background-color: #ffffff;
+        background-color: #EDEBE9;
         border-radius: 24px;
         padding: 0 12px;
       }
