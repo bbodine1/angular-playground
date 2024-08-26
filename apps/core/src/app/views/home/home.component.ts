@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { TuiButton } from '@taiga-ui/core';
 
 @Component({
   selector: 'core-home',
   standalone: true,
-  imports: [CommonModule],
-  template: `<p>home works!</p>`,
+  imports: [TuiButton, CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <p>home works!</p>
+
+    <button size="m" tuiButton>Medium</button>
+  `,
   styles: ``,
 })
 export class HomeComponent {}
