@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 
       <span class="divider"></span>
 
-      <h1>Individual & Family</h1>
+      <p class="header-title">Individual & Family</p>
     </header>
   `,
   styles: `
@@ -57,7 +57,7 @@ import { CommonModule } from '@angular/common';
     background-color: var(--divider-color)
   }
 
-  h1 {
+  .header-title {
     margin: 0;
     font-size: inherit;
     font-weight: inherit;

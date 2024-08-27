@@ -1,17 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import { TuiButton } from '@taiga-ui/core';
+import { Component } from '@angular/core';
+import { NavMainComponent } from '@ap/core-ui';
 
 @Component({
   selector: 'core-home',
   standalone: true,
-  imports: [TuiButton, CommonModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [NavMainComponent],
   template: `
-    <p>home works!</p>
+    <h1>Welcome to CoverME.gov</h1>
 
-    <button size="m" tuiButton>Medium</button>
+    <p>Maine's Official Health Insurance Marketplace</p>
+
+    <lib-nav-main />
   `,
   styles: ``,
 })

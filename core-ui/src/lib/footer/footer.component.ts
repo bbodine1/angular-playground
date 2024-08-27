@@ -1,9 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+import { TuiButton } from '@taiga-ui/core';
 
 @Component({
   selector: 'lib-footer',
   standalone: true,
-  imports: [],
+  imports: [TuiButton, RouterLink],
   template: `
     <footer>
       <div class="language">
@@ -24,8 +27,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
           <div class="help">
             <b>Get Help</b>
-            <button>Live Chat</button>
-            <button>(866) 636-0355 / TTY 711</button>
+            <button routerLink="/" size="s" tuiButton>Live Chat</button>
+            <button routerLink="/" size="s" tuiButton>
+              (866) 636-0355 / TTY 711
+            </button>
           </div>
         </div>
       </div>

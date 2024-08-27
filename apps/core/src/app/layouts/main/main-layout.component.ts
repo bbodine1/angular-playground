@@ -1,22 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import {
-  FooterComponent,
-  HeaderComponent,
-  NavMainComponent,
-} from '@ap/core-ui';
+import { FooterComponent, HeaderComponent } from '@ap/core-ui';
 
 @Component({
   selector: 'core-main-layout',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, NavMainComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   template: `
     <lib-header />
 
     <main>
       <div class="container">
-        <lib-nav-main />
         <router-outlet />
       </div>
     </main>
