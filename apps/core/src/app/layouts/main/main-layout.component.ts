@@ -20,7 +20,8 @@ import { FooterComponent, HeaderComponent } from '@ap/core-ui';
   `,
   styles: `
     main {
-      min-height: calc(100vh - 72px - 116px);
+      height: calc(100dvh - 72px - 116px);
+      overflow-y: scroll;
     }
 
     .container {
